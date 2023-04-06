@@ -352,7 +352,11 @@ img{
     background: red;
     font-size: 16px;
     font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto;
-    font-weight: bold
+    font-weight: bold;
+}
+
+.btn_guardar:hover{
+    background-color: rgb(161, 25, 25);
 }
 
 .btn_update{
@@ -364,6 +368,9 @@ img{
     border-radius: 50%;
     margin-inline-end: 0.5rem;
 }
+.btn_update:hover{
+    background: #ffffff;
+}
 
 .btn_dots{
     min-height: 2rem;
@@ -372,6 +379,10 @@ img{
     color: #000000;
     border: 0;
     border-radius: 50%;      
+}
+
+.btn_dots:hover{
+    background: #ffffff;
 }
 
 
