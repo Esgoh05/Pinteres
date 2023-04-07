@@ -9,16 +9,17 @@
     <link rel="shortcut icon" href="/assets/icons/pinterest.ico" />
     
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar-pinterest">
         <div class="navbar_pinteres_buttons_container">
             <div class="navbar_pinteres_buttons">
-                <button class="btn_pinteres">
+                <a id="pinterest-icon" href="https://www.pinterest.com.mx/">
                     <i class="bi bi-pinterest" style="font-size: 1.5rem;"></i>
-                </button>
+                </a>
                 <button class="btn_inicio">Inicio</button>
                 <button class="btn_hoy">Hoy</button>
 
@@ -32,32 +33,32 @@
         <div class="navbar_input_search_container">
             <div class="navbar_input_search">
                 <i class="bi bi-search"></i>
-                <input class="input_search" type="text" text-area placeholder="Search">
+                <input class="finder" type="text" text-area placeholder="Search">
             </div>
         </div>
         <div class="navbar_user_buttons_container">
-            <button class="btn_bell">
+            <button id="notifications">
                 <i class="bi bi-bell-fill" style="font-size: 1.5rem;"></i>
             </button>
-            <button class="btn_chat_dots">
+            <button class="btn_chat_dots" id="message">
                 <i class="bi bi-chat-dots-fill" style="font-size: 1.5rem;"></i>
             </button>
-            <button class="btn_perfil">
+            <button class="btn_perfil" id="profile-img">
                 <img class="user_img" src="/assets/imgs/gatito.jpg" alt="user">
             </button>
             <select name="dropdown_user" id="dropdown_user">
-            <option value="" hidden selected></option>
-            <option value="crear_un_idea_pin">Crear un Idea Pin</option>
-            <option value="crear_pin">Crear Pin</option>
+            <option value="" hidden selected>Crear</option>
+            <option value="crear_un_idea_pin"></option>
+            <option value="crear_pin"></option>
             </select>
         </div>
     </nav>
-    <main>
+    <main id="content">
         <!-- Contenedor de pines -->
         <!-- El proyecto debe contener al menos 30 imgs -->
         <div class="pin_container">
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                      <img class="img" src="/assets/imgs/gatito.jpg" alt="gatito"> 
                 </div>
                 <div class="card_buttons_on_hover"> 
@@ -75,7 +76,7 @@
                 </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito1.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover">
@@ -93,7 +94,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito2.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover">
@@ -111,7 +112,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito3.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -129,7 +130,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito4.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -147,7 +148,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito5.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -165,7 +166,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito6.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -183,7 +184,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito7.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -201,7 +202,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito8.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -220,7 +221,7 @@
             </div>
 
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito9.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -238,7 +239,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito10.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -256,7 +257,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito11.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -274,7 +275,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito12.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -292,7 +293,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito13.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -310,7 +311,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito14.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -328,7 +329,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito15.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -346,7 +347,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito16.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -364,7 +365,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito17.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -382,7 +383,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito18.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -400,7 +401,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito19.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -418,7 +419,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito20.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -436,7 +437,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito21.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -454,7 +455,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito22.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -472,7 +473,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito23.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -490,7 +491,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito12.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -508,7 +509,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito24.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -526,7 +527,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito25.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -544,7 +545,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito26.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -562,7 +563,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito27.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -580,7 +581,7 @@
                </div>
             </div>
             <div class="card card_large">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito28.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -598,7 +599,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito29.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -616,7 +617,7 @@
                </div>
             </div>
             <div class="card card_medium">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito31.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -634,7 +635,7 @@
                </div>
             </div>
             <div class="card card_small">
-                <div class="card_content">
+                <div class="card-image">
                     <img class="img" src="/assets/imgs/gatito32.jpg" alt="gatito"> 
                </div>
                <div class="card_buttons_on_hover"> 
@@ -651,14 +652,6 @@
                    </div>
                </div>
             </div>
-
-
-
-
-
-
-
-
         </div>
         <!-- Fin de contenedor de pines -->
         <!-- Botón flotante -->
